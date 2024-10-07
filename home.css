@@ -1,0 +1,208 @@
+body {
+  background-color: #FCFAF8;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/*/// Header Start ///*/
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FCFAF8;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.logo {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.topnav a, .topnav button {
+  float: right;
+  color: #2B4D44;
+  text-decoration: none;
+  padding: 10px 10px;
+}
+
+/* Dropdown Start */
+.topnav {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FCFAF8;
+    width: 100vw;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.5);
+    z-index: 1;
+    top: 100%;
+    right: -10px;
+    border-top: 2px solid #2B4D44;
+    border-bottom: 2px solid #2B4D44;
+    padding: 0;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #2B4D44;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-header {
+    padding: 0px;
+    border-bottom: 1px solid #2B4D44;
+}
+
+.dropdown-headerSplit {
+    padding: 10px 16px;
+    border-bottom: 2px solid #2B4D44;
+}
+
+.dropdown-content a:hover {
+    background-color: #CBFA79;
+    color: #2B4D44;
+}
+
+.topnav .dropbtn:hover + .dropdown-content, .topnav .dropdown-content:hover {
+    display: block;
+}
+
+.dropbtn {
+    cursor: pointer;
+    text-decoration: none;
+    color: #2B4D44;
+    background: none;
+    border: none;
+    font-size: 18px;
+}
+/* End dropdown */ 
+/*/// End Header ///*/
+
+footer .info {
+  list-style-type:none;
+  column-count: 2;
+  column-gap: 30px;
+  padding: 10px 16px;
+  border-top: solid;
+}
+
+footer .socialMedia {
+  text-align: center;
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 36px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Banner */
+h4 {
+  color: #2B4D44;
+  text-align: center;
+  background-color: #CBFA79;
+  margin: 0;
+}
+
+/* Ny kollektion */
+h2 {
+  color: #2B4D44;
+  text-align: center;
+  margin: 0;
+}
+
+.intro {
+  text-align: center;
+  margin: 0px 10px;
+}
+
+/*/// Top img ///*/
+.largeImg {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+  margin-bottom: 5px;
+  aspect-ratio: 3.6/1; 
+  object-fit: cover;
+}
+@media only screen and (max-width: 600px) {
+  .largeImg {
+    aspect-ratio: 1.2/1; 
+  }
+}
+
+.imgContainer {
+  position: relative;
+  text-align: center;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  color: #CBFA79;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  color: #CBFA79;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/*/// End top img ///*/
+
+button:active {
+  transform:translateY(4px)
+}
+
+/*/// Scroll product ///*/
+div.scroll-container {
+  margin-bottom: 10px;
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+  overflow: auto;
+  flex-wrap: nowrap;
+}
+
+div.scroll-container img {
+  border: 3px solid #2B4D44;
+}
+
+div.scroll-container .product:first-child,
+div.scroll-container .product:last-child {
+  padding: 0px;
+}
+
+div.scroll-container .product {
+  margin: 10px;
+  position: relative;
+}
+
+div.scroll-container .top-right {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+}
+
+div.scroll-container p {
+  color: #2B4D44;
+  margin: 0;
+}
+
+div.scroll-container button {
+  color: #2B4D44;
+  float: right;
+  background: none;
+  border: none;
+  font-size: 150%;
+}
+/*/// Scroll End ///*/
